@@ -1,0 +1,108 @@
+/* Your existing CSS styles here */
+
+/* Desktop menu styles */
+#my-first ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  #my-first .logotype {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #my-first .logotype img {
+    width: 60px;
+    height: 50px;
+  }
+  
+  #my-first .logotype .text-primary {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  
+  #my-first .burger {
+    display: none;
+  }
+  
+  #my-first .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  #my-first .menu-item {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Mobile menu styles */
+  @media screen and (max-width: 768px) {
+    #my-first .burger {
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    #my-first .burger .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+    #my-first .burger.is-open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-4px, 4px);
+    }
+  
+    #my-first .burger.is-open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #my-first .burger.is-open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-4px, -4px);
+    }
+  
+    #my-first .menu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      top: 70px;
+      left: 0;
+      z-index: 1;
+    }
+  
+    #my-first .menu.is-open {
+      display: block;
+    }
+  
+    #my-first .menu-item {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  
+    #my-first .menu-item i {
+      margin-right: 5px;
+    }
+  }
+  

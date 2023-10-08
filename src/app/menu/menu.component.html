@@ -1,0 +1,25 @@
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="Free HTML Templates" name="keywords" />
+<meta content="Free HTML Templates" name="description" />
+<nav id="my-first">
+  <ul>
+    <li class="logotype">
+    
+      <img src="assets/img/squirrrel.png"  width="60" height="50">
+      <span class="text-primary" style="font-size: 45px">Online Store</span>
+      <!--<a href="#">Logotype</a>-->
+    </li>
+    <li class="burger" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+       <a href="" class="menu-item" routerLink="/">Home</a>
+        <a href="" class="menu-item" routerLink="/about">About</a>
+        <!--<a href="" class="menu-item" routerLink="/classes">Classes</a>-->
+        <a href="" class="menu-item" routerLink="/product">Product</a>
+        <a href="" class="menu-item" routerLink="/contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+   

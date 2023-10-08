@@ -1,0 +1,203 @@
+
+<body>
+  
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
+      <div class="row align-items-center px-3">
+        <div class="col-lg-6 text-center text-lg-left">
+          <br><br><br><h4 class="text-white mb-4 mt-5 mt-lg-0"></h4>
+          <h1 class="container">
+            Welcome to Online Store
+          </h1>
+          <!--<p class="text-white mb-4">
+            Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed
+            sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed
+            ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo
+            dolore.
+          </p>-->
+          <!--<a href="" class="btn btn-secondary mt-1 py-3 px-5">Learn More</a>-->
+        </div>
+        <div class="col-lg-6 text-center text-lg-right">
+          <!---ktu do vendosim logon e kompanise-->
+          <br><br><img class="img-fluid mt-5" src="/assets/img/#" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+  
+    <!--Start slider-->
+    <div class="slider-container" style ="border-radius: 0%;">
+      <div class="slides" [style.transition]="'transform ' + slideTransitionDuration + 'ms'" [style.transform]="'translateX(' + (-currentSlideIndex * (slideWidth || 0)) + 'px)'">
+        <div *ngFor="let slide of slides" class="slide">
+          <img [src]="slide.image" alt="{{ slide.caption }}">
+          <div class="caption">{{ slide.caption }}</div>
+        </div>
+      </div>
+    </div>
+    
+    <!--End slider--->
+  
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="assets/img/about-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7">
+            <p class="section-title pr-5">
+              <span class="pr-2">Learn About Us</span>
+            </p>
+            <h1 class="mb-4">Best School For Your Kids</h1>
+            <p>
+              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
+              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
+              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
+              dolor
+            </p>
+            <div class="row pt-2 pb-4">
+              <div class="col-6 col-md-4">
+                <img class="img-fluid rounded" src="assets/img/about-2.jpg" alt="" />
+              </div>
+              <div class="col-6 col-md-8">
+                <ul class="list-inline m-0">
+                  <li class="py-2 border-top border-bottom">
+                    <i class="fa fa-check text-primary mr-3"></i>Labore eos amet
+                    dolor amet diam
+                  </li>
+                  <li class="py-2 border-bottom">
+                    <i class="fa fa-check text-primary mr-3"></i>Etsea et sit
+                    dolor amet ipsum
+                  </li>
+                  <li class="py-2 border-bottom">
+                    <i class="fa fa-check text-primary mr-3"></i>Diam dolor diam
+                    elitripsum vero.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--<a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+  
+   
+  
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+      <div class="container p-0">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">Testimonial</span>
+          </p>
+          <h1 class="mb-4">What clients say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-item px-3">
+            <div class="bg-light shadow-sm rounded mb-4 p-4">
+              <li class="fa fa-quote-left text-primary mr-3" aria-hidden="true"></li>
+              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
+              eirmod clita lorem. Dolor tempor ipsum clita
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                class="rounded-circle"
+                src="assets/img/testimonial-1.jpg"
+                style="width: 70px; height: 70px"
+                alt="Image"
+              />
+              <div class="pl-3">
+                <h5>Client Name</h5>
+                <i>Profession</i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item px-3">
+            <div class="bg-light shadow-sm rounded mb-4 p-4">
+              <li class="fa fa-quote-left text-primary mr-3" aria-hidden="true"></li>
+              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
+              eirmod clita lorem. Dolor tempor ipsum clita
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                class="rounded-circle"
+                src="assets/img/testimonial-2.jpg"
+                style="width: 70px; height: 70px"
+                alt="Image"
+              />
+              <div class="pl-3">
+                <h5>Client Name</h5>
+                <i>Profession</i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item px-3">
+            <div class="bg-light shadow-sm rounded mb-4 p-4">
+              <li class="fa fa-quote-left text-primary mr-3" aria-hidden="true"></li>
+              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
+              eirmod clita lorem. Dolor tempor ipsum clita
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                class="rounded-circle"
+                src="assets/img/testimonial-3.jpg"
+                style="width: 70px; height: 70px"
+                alt="Image"
+              />
+              <div class="pl-3">
+                <h5>Client Name</h5>
+                <i>Profession</i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item px-3">
+            <div class="bg-light shadow-sm rounded mb-4 p-4">
+              <li class="fa fa-quote-left text-primary mr-3" aria-hidden="true"></li>
+              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
+              eirmod clita lorem. Dolor tempor ipsum clita
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                class="rounded-circle"
+                src="assets/img/testimonial-4.jpg"
+                style="width: 70px; height: 70px"
+                alt="Image"
+              />
+              <div class="pl-3">
+                <h5>Client Name</h5>
+                <i>Profession</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+  
+    
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+  
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+  
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
